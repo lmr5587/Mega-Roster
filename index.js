@@ -5,9 +5,9 @@ const personForm = document.querySelector('form')
 personForm.addEventListener('submit',(ev) => this.handleSubmit(ev))
 },
 
-renderListItem(name, value) {
+renderListItem(value) {
     const li = document.createElement('li')
-    li.innerHTML = `${name}: ${value}`
+    li.innerHTML = `${value}`
     return li
   },
 
