@@ -16,7 +16,7 @@ renderListItem(value) {
     Array.from(person).map((input, _i, _elementsArray) => {
       if (input.value) {
         let value = input.value
-        let li = this.renderListItem(input.name, value)
+        let li = this.renderListItem(value)
         list.appendChild(li)
       }
     })
