@@ -17,6 +17,12 @@ h1 span {
   text-transform: none;
   margin: 0 4px 0 -10px;
 }
+h3 {
+  font: 800 32px/32px 'Open Sans', sans-serif;
+  color: purple;
+  border: 3px solid lime;
+  text-align: center;
+}
 
 section {
   display: flex;
