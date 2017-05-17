@@ -17,11 +17,14 @@ const megaroster = {
         id: this.max + 1,
         name:f.stidentName.value,
     }
-    this.buildListItem(student)
+    const listItem = this.buildListItem(student)
+    this.studentList.appendChild(listItem)
     this.max++
   },
   buildListItem(student){
-
+    const li =document.createElement('li')
+    li.textContent=student.name
+    return li
   }
 }
 megaroster.init('#studentList')
