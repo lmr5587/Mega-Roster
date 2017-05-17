@@ -15,24 +15,18 @@ renderListItem(value) {
    const list = document.createElement('ul')
     Array.from(person).map((input, _i, _elementsArray) => {
       if (input.value) {
-          var count = 0
         let value = input.value
         let li = this.renderListItem(value)
         var textnode = document.createTextNode(value)
-    //    if (count === 0){
+       if (list.length===0 ){
        list.appendChild(textnode)
-    //     count++
-    //    }
-    //    else{
-        // list.insertBefore(li, list.childNodes[0]);
-     //  }
-        
-
-        
-       
+       }
+       else{
+        list.insertBefore(li, list.childNodes[0]);
+      }
+         
       }
     })
-
     return list
   },
 
